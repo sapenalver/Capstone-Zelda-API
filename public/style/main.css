@@ -5,10 +5,11 @@ body {
 h1 {
     color: white;
     font-family: "The Wild Breath of Zelda";
-    font-size: 10rem;
+    font-size: 6rem;
     font-weight: normal;
 }
 
 footer {
     color: white;
+    font-family: "The Wild Breath of Zelda";
 }
