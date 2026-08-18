@@ -1,0 +1,29 @@
+[33mcommit 53c24eaea1debfbe151c1b2c825f5a363f30f91b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Sebastian Penalver <sa.penalver@gmail.com>
+Date:   Tue Aug 18 14:20:56 2026 +0100
+
+    change side-bar to header
+
+[33mcommit 69028f9e2faab5d481bb8d5b1a119399f821903f[m
+Author: Sebastian Penalver <sa.penalver@gmail.com>
+Date:   Tue Aug 18 14:01:04 2026 +0100
+
+    add latest updates
+
+[33mcommit 2275b3c3763f56807e80ca85d293c27a18c9fbf5[m
+Author: Sebastian Penalver <sa.penalver@gmail.com>
+Date:   Mon Aug 17 13:09:33 2026 +0100
+
+    fix text
+
+[33mcommit 1b7846e512008e0c569a8551196b1d8d8ba67ad2[m
+Author: Sebastian Penalver <sa.penalver@gmail.com>
+Date:   Mon Aug 17 13:06:52 2026 +0100
+
+    set up ejs templates
+
+[33mcommit 07d2fd1180ff826f95251af1757896ea72d7c8e6[m
+Author: Sebastian Penalver <sa.penalver@gmail.com>
+Date:   Sun Aug 16 23:58:47 2026 +0100
+
+    initial commit

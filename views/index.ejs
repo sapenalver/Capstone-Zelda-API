@@ -1,9 +1,16 @@
 <%- include("partials/header.ejs") %>
 
+<nav id="side-bar">
+    <ul>
+        <% regions.forEach(region => {%>
+        <li>
+            <a href=""><%= region.name %></a>
+        </li>
+        <% });%>
+    </ul>
+</nav>
+
 <main> 
-    
-    <button></button>
-    
     <div class="data-container">
         <h2> <%= data %> </h2>
     </div>

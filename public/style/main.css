@@ -2,10 +2,9 @@ body {
     background-color: black;
 }
 
-h1 {
+h1, h2 {
     color: white;
     font-family: sans-serif;
-    font-size: 6rem;
     font-weight: normal;
 }
 
@@ -13,3 +12,4 @@ footer {
     color: white;
     font-family: sans-serif;
 }
+
