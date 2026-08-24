@@ -4,7 +4,7 @@
     <ul>
         <% regions.forEach(region => {%>
         <li>
-            <a href=""><%= region.name %></a>
+            <a href="/region/<%= region.name %>"><%= region.name %></a>
         </li>
         <% });%>
     </ul>
@@ -12,7 +12,18 @@
 
 <main> 
     <div class="data-container">
-        <h2> <%= data %> </h2>
+        <% if (locals.shrines) {%>
+            <h2><%= region %></h2>
+            <ul>
+                <% shrines.forEach(shrine => { %>
+                    <li>
+                        <%= shrine.name %>: <%= shrine.puzzle %>
+                    </li>
+                <%})%>                
+            </ul>
+        <%} else {%>
+        <h2> Select your region </h2>
+        <% } %>
     </div>
 </main>
 
