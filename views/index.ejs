@@ -1,32 +1,38 @@
 <%- include("partials/header.ejs") %>
 
-<nav id="side-bar">
-    <h4>BREATH OF THE WILD:</h4>
-    <h5>Shrine Finder</h5>
-    <ul>
-        <% regions.forEach(region => {%>
-        <li>
-            <a href="/region/<%= region.name %>"><%= region.name %></a>
-        </li>
-        <% });%>
-    </ul>
-</nav>
+    <nav id="side-bar">
+        <div class="title">
+            <h3>BREATH OF THE WILD:</h3>
+            <h4>Shrine Finder</h4>
+        </div>
+        <ul>
+            <% regions.forEach(region=> {%>
+                <li class="regions-list">
+                    <a href="/region/<%= region.name %>">
+                        <%= region.name %>
+                    </a>
+                </li>
+                <% });%>
+        </ul>
+    </nav>
 
-<main> 
-    <div class="data-container">
-        <% if (locals.shrines) {%>
-            <h2><%= region %></h2>
-            <ul>
-                <% shrines.forEach(shrine => { %>
-                    <li>
-                        <%= shrine.name %>: <%= shrine.puzzle %>
-                    </li>
-                <%})%>                
-            </ul>
-        <%} else {%>
-        <h2> Select your region </h2>
-        <% } %>
-    </div>
-</main>
+    <main>
+        <div class="data-container">
+            <% if (locals.shrines) {%>
+                <h2>
+                    <%= region %>
+                </h2>
+                <ul>
+                    <% shrines.forEach(shrine=> { %>
+                        <li>
+                            <%= shrine.name %>: <%= shrine.puzzle %>
+                        </li>
+                        <%})%>
+                </ul>
+                <%} else {%>
+                    <h1> Select your region </h1>
+                    <% } %>
+        </div>
+    </main>
 
-<%- include("partials/footer.ejs") %>
+    <%- include("partials/footer.ejs") %>
