@@ -5,6 +5,7 @@
             <h3>BREATH OF THE WILD:</h3>
             <h4>Shrine Finder</h4>
         </div>
+        
         <ul>
             <% regions.forEach(region=> {%>
                 <li class="regions-list">
@@ -24,13 +25,14 @@
                 </h2>
                 <ul>
                     <% shrines.forEach(shrine=> { %>
-                        <li>
+                        <li class="shrine-list">
                             <%= shrine.name %>: <%= shrine.puzzle %>
                         </li>
                         <%})%>
                 </ul>
                 <%} else {%>
-                    <h1> Select your region </h1>
+                    <h2> Select your region </h2>
+                    <img src="images/sword-altar.svg" alt="master-sword" id="master-sword">
                     <% } %>
         </div>
     </main>
